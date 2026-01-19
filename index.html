@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; url=vpn.html" />
-    <script>window.location.href = "vpn.html";</script>
-    <title>重定向到 vpn.html</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lge</title>
+    <style>
+        body { 
+            font-family: system-ui, -apple-system, sans-serif; 
+            text-align: center; 
+            padding: 50px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        .container { 
+            background: white; 
+            color: #1f2937; 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3); 
+            max-width: 600px; 
+        }
+        h1 { color: #4f46e5; margin-bottom: 1rem; }
+        .success { 
+            background: #f0f9ff; 
+            padding: 20px; 
+            border-radius: 10px; 
+            margin: 20px 0; 
+        }
+    </style>
 </head>
 <body>
-    <p>正在重定向到 <a href="vpn.html">vpn.html</a>...</p>
+    <div class="container">
+        <h1>🚀 lge</h1>
+        <div class="success">
+            <p>这是默认首页。</p>
+            <p>时间: <span id="time"></span></p>
+        </div>
+    </div>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString();
+    </script>
 </body>
 </html>
